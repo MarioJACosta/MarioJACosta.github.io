@@ -25,8 +25,8 @@
 <div class="flex items-center justify-center h-screen">
     <div class="max-w-sm rounded overflow-hidden shadow-lg pt-8">
         <div class="p-6">
-        <canvas class="w-full z-40" id="canvas"></canvas>
-            <p class="text-behind text-gray-700 text-base bg-white">
+        <canvas class="w-full front" id="canvas"></canvas>
+            <p class="text-behind text-gray-700 text-base">
                 Para além das prendas habituais e outras que queiram dar, uma raspadinha devem trazer para os noivos
                 animar.
             </p>
@@ -46,7 +46,7 @@
         const brush = new Image();
 
         const image = new Image();
-        image.src = "Gunmetal.jpg";
+        image.src = "raspadinha.png";
         image.onload = function () {
             ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
         };
